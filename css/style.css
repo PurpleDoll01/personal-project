@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  padding: 0 22px;
+}
+
+.menu ol {
+  display: flex;
+}
+
+.session {
+  display: flex;
+  align-items: center;
+}
+
+/* .menu a {
+  display: flex;
+} */
