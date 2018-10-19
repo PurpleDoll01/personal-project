@@ -620,7 +620,8 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .products a,
@@ -696,19 +697,67 @@ h1 {
   padding-left: 30px;
 }
 
+.other-product {
+  background-color: black;
+}
+
 .other-products {
  background-color: black;
- display: flex;
- justify-content: space-between;
  padding: 0 430px;
  border-top: 1.5px solid #282828;
  border-bottom: 1.5px solid #282828;
  height: 62px;
  color: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 0 20px;
 }
 
-.other-products {
+.footer {
+  background-color: black;
+  color: #999999;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  height: 114px;
+  padding: 0 20px;
+  font-size: 12px;
+}
+
+.footer path {
+  fill: #999999;
+}
+
+.region {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.region p {
+  margin: 0 10px;
+}
+
+.privacy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.privacy p {
+  margin: 0 5px;
+}
+
+.adchoices {
+  display: flex;
+  align-items: center;
+}
+
+.adchoices path {
+  fill: #104F5F;
+}
+
+.adchoices svg {
+  margin: 0 0 0 7px;
 }
