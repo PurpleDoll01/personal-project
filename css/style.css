@@ -33,6 +33,14 @@ svg {
   fill: #6B6B6B;
 }
 
+.session svg:hover path{
+  fill: #2B9AF3;
+}
+
+.session p:hover {
+  color: #2B9AF3;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -62,12 +70,35 @@ svg {
 
 .menu a {
   text-decoration: none;
-  height: inherit;
+  height: 30px;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 0 20px;
   color: #6B6B6B;
   font-size: 13.7px;
+  position: relative;
+  padding-top: 30px;
+}
+
+.menu a:hover {
+  background-color: #F4F4F4;
+}
+
+.menu svg {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: -5px;
+}
+
+.menu path {
+  fill: transparent;
+}
+
+.menu a:hover path {
+  fill: #B2B2B2;
 }
 
 .session {
@@ -123,6 +154,10 @@ svg {
   letter-spacing: -0.3px
 }
 
+.features a:hover {
+  background-color: #421A34;
+}
+
 button {
   margin-right: 13px;
   margin-left: 15px;
@@ -132,6 +167,10 @@ button {
   font-family: Bold;
   padding: 8px 12px;
   border-radius: 25px;
+}
+
+.button:hover {
+  background-color: #005ABE;
 }
 
 .design {
@@ -223,6 +262,10 @@ h1 {
   color: #189AF3;
 }
 
+.experience-description a:hover {
+  color: #30C6FE;
+}
+
 .prototype {
   display: flex;
   align-items: center;
@@ -255,6 +298,10 @@ h1 {
   color: #189AF3;
 }
 
+.prototype-description span:hover {
+  color: #30C6FE;
+}
+
 .prototype-images {
   margin-top: 40px;
 }
@@ -267,6 +314,10 @@ h1 {
   margin-top: 192px;
 }
 
+.win a:hover {
+  color: #30C6FE;
+}
+
 .win-content {
   text-align: center;
 }
@@ -277,6 +328,10 @@ h1 {
   align-items: center;
   margin-top: 259px;
   padding: 0 122px 0 160px;
+}
+
+.photoshop a:hover {
+  color: #30C6FE;
 }
 
 .photoshop-content {
@@ -297,6 +352,10 @@ h1 {
   font-family: Light;
   color: #2B9AF3;
   font-size: 23px;
+}
+
+.learn a:hover {
+  color: #30C6FE;
 }
 
 .phrase {
@@ -347,6 +406,10 @@ h1 {
   font-size: 14.5px;
   color: #189AF3;
   text-decoration: none;
+}
+
+.possibilities-description a:hover {
+  color: #30C6FE;
 }
 
 .possibilities-description h3 {
@@ -403,6 +466,14 @@ h1 {
   font-size: 14.5px;
   color: #189AF3;
   text-decoration: none;
+}
+
+.creative-cloud a:hover {
+  color: #30C6FE;
+}
+
+.stay-up a:hover {
+  color: #30C6FE;
 }
 
 .creative-cloud {
@@ -467,6 +538,14 @@ h1 {
   margin: 0 15px;
 }
 
+.fnd-plan-1 button:hover {
+  background-color: #005ABE;
+}
+
+.both-fnd a:hover {
+  color: #30C6FE;
+}
+
 .both-fnd h3 {
   font-size: 20px;
   font-weight: 600;
@@ -507,6 +586,10 @@ h1 {
   margin-bottom: 56px;
 }
 
+.svg-icons button:hover {
+  background-color: #005ABE;
+}
+
 .all-icons p {
   font-family: Light;
   font-size: 15px;
@@ -532,6 +615,10 @@ h1 {
   font-size: 15px;
   color: #189AF3;
   text-decoration: none;
+}
+
+.all-icons a:hover {
+  color: #30C6FE;
 }
 
 .svg-icons button {
@@ -582,6 +669,10 @@ h1 {
   background-color: black;
   display: flex;
   flex-direction: column;
+  color: white;
+}
+
+.information a:hover {
   color: white;
 }
 
@@ -649,6 +740,10 @@ h1 {
   display: flex;
   flex-direction: column;
   height: 252px;
+}
+
+.blogs svg:hover path {
+  fill: white;
 }
 
 .blogs-description {
@@ -737,6 +832,14 @@ h1 {
 
 .region p {
   margin: 0 10px;
+}
+
+.region:hover p {
+  color: white;
+}
+
+.region:hover path {
+  fill: white;
 }
 
 .privacy {
