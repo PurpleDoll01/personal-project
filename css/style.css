@@ -235,12 +235,12 @@ button {
   font-size: 14.8px;
   margin-bottom: 28px;
   max-width: 880px;
-  padding: 0 19%;
+  padding: 0 20%;
 }
 
 .design img {
   margin-top: 45px;
-  max-width: 80%;
+  max-width: 70%;
 }
 
 h1 {
@@ -272,14 +272,14 @@ h1 {
   font-size: 29px;
 }
 
-.content .explanation p {
+.content .explanation-p {
   margin: 0;
   margin-top: 7px;
   margin-bottom: 104px;
   font-size: 14.8px;
   line-height: 1.3;
   max-width: 840px;
-  padding: 0 13%;
+  padding: 0 20%;
 }
 
 .experience-design {
@@ -951,9 +951,58 @@ h1 {
   }
 }
 
+@media screen and (max-width: 995px) {
+  .design {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .design p {
+    line-height: 1.4;
+  }
+}
+
 @media screen and (max-width: 896px) {
+  .design p {
+    padding: 0 21%;
+  }
   .list-PDF {
     display: none;
+  }
+
+}
+
+@media screen and (max-width: 769px) {
+  .content .explanation-p {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 721px) {
+  h1 {
+    font-size: 2.1em;
+    margin: 72px 0 5px 0;
+    line-height: 1;
+  }
+
+  .design p {
+    font-size: .8em;
+  }
+
+  .content .explanation-p {
+    font-size: .83em;
+  }
+
+  .content .explanation h3 {
+    font-size: 1.4em;
+  }
+
+  .experience-description h3 {
+    font-size: 1.4em;
+  }
+
+  .experience-description p {
+    font-size: .83em;
   }
 }
 
@@ -970,6 +1019,16 @@ h1 {
    height: auto;
    padding-bottom: 5px;
  }
+}
+
+@media screen and (max-width: 639px) {
+  h1 {
+    padding: 0 21%;
+  }
+
+  .design p {
+    padding: 0 22%;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -989,14 +1048,17 @@ h1 {
     margin: 0;
   }
 
-  h1 {
-    padding: 0 3%;
-    font-size: 2.2em;
-    margin: 57px 0 0 0;
-  }
-
   .design p {
     padding: 0 3%;
     font-size: 0.8em;
+  }
+
+  h1 {
+    padding: 0 3%;
+  }
+
+  .content .explanation-p {
+    padding: 0 3%;
+    font-size: .81em;
   }
 }
