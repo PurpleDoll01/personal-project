@@ -1,4 +1,34 @@
 @font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?twfq94');
+  src:  url('../fonts/icomoon.eot?twfq94#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?twfq94') format('truetype'),
+    url('../fonts/icomoon.woff?twfq94') format('woff'),
+    url('../fonts/icomoon.svg?twfq94#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+}
+
+@font-face {
   src: url(../fonts/CorisandeRegular.ttf);
   font-family: Coris;
 }
@@ -65,7 +95,6 @@ svg {
 
 .menu li {
   height: inherit;
-  display: flex;
 }
 
 .menu a {
@@ -101,6 +130,24 @@ svg {
   fill: #B2B2B2;
 }
 
+.list-more {
+  display: none;
+}
+
+.burger-button {
+  width: 17px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 46px;
+  text-align: center;
+  display: none;
+  z-index: 4;
+  left: 5px;
+  top: 5px;
+  color: black;
+  font-size: 20px;
+}
+
 .session {
   display: flex;
   align-items: center;
@@ -118,10 +165,9 @@ svg {
   display: flex;
   height: 80px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #2D001D;
   font-family: Bold;
-  padding: 0 183px;
 }
 
 .features {
@@ -188,14 +234,17 @@ button {
   margin: 0;
   font-size: 14.8px;
   margin-bottom: 28px;
+  max-width: 880px;
+  padding: 0 19%;
 }
 
 .design img {
-  margin-top: 47px;
+  margin-top: 45px;
+  max-width: 80%;
 }
 
 h1 {
-  padding: 0;
+  padding: 0 19%;
   margin: 77px 0 0 0;
   font-family: Bold;
   font-size: 45px;
@@ -229,18 +278,25 @@ h1 {
   margin-bottom: 104px;
   font-size: 14.8px;
   line-height: 1.3;
+  max-width: 840px;
+  padding: 0 13%;
 }
 
 .experience-design {
   display: flex;
-  padding: 0 123px;
+  padding: 0 8%;
   justify-content: space-between;
   align-items: center;
+}
+
+.experience-design img {
+  width: 50%;
 }
 
 .experience-description {
   text-align: center;
   margin-right: 35px;
+  width: 40%;
 }
 
 .experience-description h3 {
@@ -863,4 +919,84 @@ h1 {
 
 .adchoices svg {
   margin: 0 0 0 7px;
+}
+
+@media screen and (max-width: 1165px) {
+  .tec-assist {
+    display: none;
+  }
+
+  .list-more {
+    display: inline-block;
+  }
+
+  /* .menu li {
+    display: none;
+  } */
+}
+
+@media screen and (max-width: 1083px) {
+  .list-solutions {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1034px) {
+  .plans button {
+    display: none;
+  }
+
+  .features {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  .list-PDF {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 709px) {
+ .menu, .session {
+   display: none;
+ }
+
+ .burger-button {
+   display: inline-block;
+ }
+
+ .header {
+   height: auto;
+   padding-bottom: 5px;
+ }
+}
+
+@media screen and (max-width: 580px) {
+  .experience-design {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3%;
+  }
+
+  .experience-design img {
+    width: 90%;
+  }
+
+  .experience-description {
+    text-align: center;
+    width: 90%;
+    margin: 0;
+  }
+
+  h1 {
+    padding: 0 3%;
+    font-size: 2.2em;
+    margin: 57px 0 0 0;
+  }
+
+  .design p {
+    padding: 0 3%;
+    font-size: 0.8em;
+  }
 }
