@@ -323,16 +323,21 @@ h1 {
 }
 
 .prototype {
-  display: flex;
-  align-items: center;
-  margin-top: 211px;
+  padding: 0 8%;
   justify-content: space-between;
-  padding: 0 122px;
+  align-items: center;
+  display: flex;
+  margin-top: 200px;
+}
+
+.proto-image {
+  width: 50%;
 }
 
 .prototype-description {
   text-align: center;
-  margin-left: 23px;
+  margin-left: 8px;
+  width: 40%;
 }
 
 .prototype-description h3,
@@ -359,7 +364,7 @@ h1 {
 }
 
 .prototype-images {
-  margin-top: 40px;
+  margin: 40px 3% 0 3%;
 }
 
 .win {
@@ -949,6 +954,14 @@ h1 {
   .features {
     display: none;
   }
+
+  .prototype-description {
+    width: 44%;
+  }
+
+  .proto-image {
+    width: 48%;
+  }
 }
 
 @media screen and (max-width: 995px) {
@@ -997,12 +1010,18 @@ h1 {
     font-size: 1.4em;
   }
 
-  .experience-description h3 {
+  .experience-description h3,
+  .prototype-description h3 {
     font-size: 1.4em;
   }
 
-  .experience-description p {
+  .experience-description p,
+  .prototype-description p {
     font-size: .83em;
+  }
+
+  .prototype {
+    margin-top: 114px;
   }
 }
 
@@ -1032,23 +1051,32 @@ h1 {
 }
 
 @media screen and (max-width: 580px) {
-  .experience-design {
+  .experience-design,
+  .prototype {
     flex-direction: column;
     justify-content: center;
     padding: 0 3%;
+    position: relative;
+  }
+
+  .proto-image {
+    order: -1;
+    width: 90%;
   }
 
   .experience-design img {
     width: 90%;
   }
 
-  .experience-description {
+  .experience-description,
+  .prototype-description {
     text-align: center;
     width: 90%;
     margin: 0;
   }
 
-  .design p {
+  .design p,
+  .prototype-description p {
     padding: 0 3%;
     font-size: 0.8em;
   }
