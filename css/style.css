@@ -368,10 +368,10 @@ h1 {
 }
 
 .win {
-  display: flex;
+  padding: 0 8%;
   justify-content: space-between;
   align-items: center;
-  padding: 0 160px 0 123px;
+  display: flex;
   margin-top: 192px;
 }
 
@@ -379,16 +379,26 @@ h1 {
   color: #30C6FE;
 }
 
+.win img {
+  width: 50%;
+}
+
 .win-content {
   text-align: center;
+  margin-left: 8px;
+  width: 40%;
 }
 
 .photoshop {
-  display: flex;
+  padding: 0 8%;
   justify-content: space-between;
   align-items: center;
-  margin-top: 259px;
-  padding: 0 122px 0 160px;
+  display: flex;
+  margin-top: 192px;
+}
+
+.photoshop img {
+  width: 50%;
 }
 
 .photoshop a:hover {
@@ -397,6 +407,8 @@ h1 {
 
 .photoshop-content {
   text-align: center;
+  margin-left: 8px;
+  width: 40%;
 }
 
 .learn {
@@ -938,11 +950,20 @@ h1 {
   /* .menu li {
     display: none;
   } */
+
+  .learn a {
+    font-size: 1.4em;
+  }
 }
+
 
 @media screen and (max-width: 1083px) {
   .list-solutions {
     display: none;
+  }
+
+  .learn a {
+    font-size: 1.3em;
   }
 }
 
@@ -973,6 +994,10 @@ h1 {
   .design p {
     line-height: 1.4;
   }
+
+  .learn a {
+    font-size: 1.2em;
+  }
 }
 
 @media screen and (max-width: 896px) {
@@ -983,11 +1008,19 @@ h1 {
     display: none;
   }
 
+  .learn a {
+    font-size: 1.15em;
+  }
+
 }
 
 @media screen and (max-width: 769px) {
   .content .explanation-p {
     margin-bottom: 60px;
+  }
+
+  .learn a {
+    font-size: 1.1em;
   }
 }
 
@@ -1011,17 +1044,27 @@ h1 {
   }
 
   .experience-description h3,
-  .prototype-description h3 {
+  .prototype-description h3,
+  .win h3,
+  .photoshop h3 {
     font-size: 1.4em;
   }
 
   .experience-description p,
-  .prototype-description p {
+  .prototype-description p,
+  .win p,
+  .photoshop p {
     font-size: .83em;
   }
 
-  .prototype {
+  .prototype,
+  .win,
+  .photoshop {
     margin-top: 114px;
+  }
+
+  .learn a {
+    font-size: 1em;
   }
 }
 
@@ -1048,35 +1091,53 @@ h1 {
   .design p {
     padding: 0 22%;
   }
+
+  .learn {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 112px;
+  }
+
+  .learn a {
+    font-size: .95em;
+  }
 }
 
 @media screen and (max-width: 580px) {
   .experience-design,
-  .prototype {
+  .prototype,
+  .win,
+  .photoshop {
     flex-direction: column;
     justify-content: center;
     padding: 0 3%;
     position: relative;
   }
 
-  .proto-image {
+  .proto-image,
+  .photoshop img {
     order: -1;
     width: 90%;
   }
 
-  .experience-design img {
+  .experience-design img,
+  .win img {
     width: 90%;
   }
 
   .experience-description,
-  .prototype-description {
+  .prototype-description,
+  .win-content,
+  .photoshop-content {
     text-align: center;
     width: 90%;
     margin: 0;
   }
 
   .design p,
-  .prototype-description p {
+  .prototype-description p,
+  .win p,
+  .photoshop p {
     padding: 0 3%;
     font-size: 0.8em;
   }
@@ -1088,5 +1149,9 @@ h1 {
   .content .explanation-p {
     padding: 0 3%;
     font-size: .81em;
+  }
+
+  .learn {
+    margin-top: 90px;
   }
 }
