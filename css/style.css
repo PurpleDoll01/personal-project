@@ -542,6 +542,7 @@ h1 {
   text-align: center;
   margin-top: 120px;
   color: white;
+  margin-bottom: 30px;
 }
 
 .stay-up h3 {
@@ -549,6 +550,7 @@ h1 {
   font-weight: 500;
   font-size: 28px;
   margin-bottom: 10px;
+  padding: 0 20%;
 }
 
 .stay-up a,
@@ -572,6 +574,7 @@ h1 {
   background-position-y: center;
   color: white;
   text-align: center;
+  padding: 0 20%;
 }
 
 .creative-cloud img {
@@ -591,12 +594,13 @@ h1 {
   background-color: black;
   color: white;
   margin-top: 0;
-  height: 468px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 54px;
+  padding: 54px 25% 0 25%;
+  padding-bottom: 25px;
 }
 
 .find-plan h3 {
@@ -610,6 +614,7 @@ h1 {
 .both-fnd {
   display: flex;
   margin-top: 30px;
+  max-width: 95%;
 }
 
 .both-fnd p, .both-fnd h3 {
@@ -663,8 +668,8 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 310px;
-  padding: 0 140px;
+  height: auto;
+  padding: 0 10% 30px 10%;
   padding-top: 100px;
 }
 
@@ -674,6 +679,10 @@ h1 {
   text-align: center;
   width: 100%;
   margin-bottom: 56px;
+}
+
+.all-icons img {
+  width: 60px;
 }
 
 .svg-icons button:hover {
@@ -698,7 +707,12 @@ h1 {
 .icon2,
 .icon3,
 .icon4 {
-  width: 224px;
+  width: 20%;
+}
+
+.icon2 img,
+.icon3 img {
+  padding-bottom: 8px;
 }
 
 .all-icons a {
@@ -1067,11 +1081,15 @@ h1 {
   .experience-description h3,
   .prototype-description h3,
   .win h3,
-  .photoshop h3 {
+  .photoshop h3,
+  .creative-cloud h3,
+  .fnd-plan-description h3 {
     font-size: 1.4em;
   }
 
-  .poss-images h3 {
+  .poss-images h3,
+  .both-fnd h3,
+  .both-fnd a {
     font-size: 1.1em;
   }
 
@@ -1079,7 +1097,11 @@ h1 {
   .prototype-description p,
   .win p,
   .photoshop p,
-  .poss-images p {
+  .poss-images p,
+  .creative-cloud p,
+  .fnd-plan-description p,
+  .both-fnd p,
+  .all-icons p {
     font-size: .83em;
   }
 
@@ -1091,6 +1113,14 @@ h1 {
 
   .learn a {
     font-size: 1em;
+  }
+
+  .all-icons h3 {
+    font-size: 0.85em;
+  }
+
+  .all-icons img {
+    width: 47px;
   }
 }
 
@@ -1138,7 +1168,10 @@ h1 {
   .prototype,
   .win,
   .photoshop,
-  .poss-images {
+  .poss-images,
+  .find-plan,
+  .both-fnd,
+  .all-icons {
     flex-direction: column;
     justify-content: center;
     padding: 0 3%;
@@ -1178,9 +1211,7 @@ h1 {
   }
 
   .poss-images img {
-    width: 75%;
-    /* padding-right: 15%;
-    padding-left: 15%; */
+    width: 300px;
   }
 
   h1 {
@@ -1194,5 +1225,33 @@ h1 {
 
   .learn {
     margin-top: 90px;
+  }
+
+  .creative-cloud {
+    padding: 0 3%;
+  }
+
+  .fnd-plan-1,
+  .fnd-plan-2 {
+    margin-bottom: 30px;
+    max-width: 95%;
+  }
+
+  .find-plan {
+    padding-top: 30px;
+  }
+
+  .icon1,
+  .icon2,
+  .icon3,
+  .icon4 {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .poss-images img {
+    width: 80%;
   }
 }
