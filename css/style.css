@@ -731,12 +731,12 @@ h1 {
 
 .phones {
   background-color: #151515;
-  height: 181px;
+  height: auto;
   display: flex;
   flex-direction: column;
   color: white;
   align-items: center;
-  padding: 54px 217px 0 217px;
+  padding: 54px 15% 0 15%;
 }
 
 .phones h3 {
@@ -762,6 +762,13 @@ h1 {
   font-size: 19px;
   margin: 0;
   margin-bottom: 10px;
+}
+
+.argentina,
+.chile,
+.costa-rica,
+.peru {
+  width: 20%;
 }
 
 .space {
@@ -809,7 +816,7 @@ h1 {
 .products {
   flex-basis: 263px;
   flex-grow: 0;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   border-right: 1.5px solid #282828;
   height: 252px;
   display: flex;
@@ -839,7 +846,7 @@ h1 {
 .blogs {
   flex-basis: 545px;
   flex-grow: 0;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   border-right: 1.5px solid #282828;
   display: flex;
   flex-direction: column;
@@ -881,7 +888,7 @@ h1 {
 .tecnical-assistance {
   flex-basis: 263px;
   flex-grow: 0;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   border-right: 1.5px solid #282828;
   height: 252px;
   display: flex;
@@ -998,6 +1005,44 @@ h1 {
   }
 }
 
+@media screen and (max-width: 1078px) {
+  .information-lines a,
+  .blogs-logos {
+    display: none;
+  }
+
+  .information-lines {
+    flex-direction: column;
+  }
+
+  .products,
+  .blogs,
+  .tecnical-assistance,
+  .adobe-about {
+    flex-basis: 40px;
+    margin-bottom: 0;
+    border-right: 0;
+    margin-left: 31px;
+    padding-left: 0;
+  }
+
+  .products {
+    margin-left: 31px;
+    border-top: 1.5px solid #282828;
+    border-bottom: 1.5px solid #282828;
+  }
+
+  .blogs-description {
+    padding: 0;
+    margin: 0;
+  }
+
+  .adobe-about {
+    border-top: 1.5px solid #282828;
+    border-bottom: 1.5px solid #282828;
+  }
+}
+
 @media screen and (max-width: 1034px) {
   .plans button {
     display: none;
@@ -1083,13 +1128,15 @@ h1 {
   .win h3,
   .photoshop h3,
   .creative-cloud h3,
-  .fnd-plan-description h3 {
+  .fnd-plan-description h3,
+  .phones h3 {
     font-size: 1.4em;
   }
 
   .poss-images h3,
   .both-fnd h3,
-  .both-fnd a {
+  .both-fnd a,
+  .phones p {
     font-size: 1.1em;
   }
 
@@ -1121,6 +1168,10 @@ h1 {
 
   .all-icons img {
     width: 47px;
+  }
+
+  .phones p {
+    font-size: 1em;
   }
 }
 
@@ -1171,7 +1222,8 @@ h1 {
   .poss-images,
   .find-plan,
   .both-fnd,
-  .all-icons {
+  .all-icons,
+  .phone-numbers {
     flex-direction: column;
     justify-content: center;
     padding: 0 3%;
@@ -1245,6 +1297,14 @@ h1 {
   .icon2,
   .icon3,
   .icon4 {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .argentina,
+  .chile,
+  .costa-rica,
+  .peru {
     width: 100%;
     margin: 10px 0;
   }
