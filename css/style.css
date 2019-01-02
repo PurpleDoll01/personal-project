@@ -790,7 +790,7 @@ h1 {
 .information-lines {
   display: flex;
   justify-content: space-between;
-  padding: 0 19px 20px 0;
+  padding: 0 19px 0 0;
 }
 
 .information-line {
@@ -909,7 +909,7 @@ h1 {
 
 .other-products {
  background-color: black;
- padding: 0 430px;
+ padding: 0 20%;
  border-top: 1.5px solid #282828;
  border-bottom: 1.5px solid #282828;
  height: 62px;
@@ -925,6 +925,7 @@ h1 {
   color: #999999;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   height: 114px;
   padding: 0 20px;
@@ -957,6 +958,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .privacy p {
@@ -1039,7 +1041,6 @@ h1 {
 
   .adobe-about {
     border-top: 1.5px solid #282828;
-    border-bottom: 1.5px solid #282828;
   }
 }
 
@@ -1207,6 +1208,10 @@ h1 {
 
   .learn a {
     font-size: .95em;
+  }
+
+  .other-product {
+    display: none;
   }
 }
 
