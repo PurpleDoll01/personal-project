@@ -14,14 +14,14 @@
     <img src="images/adobe-logo.png" alt="logo" height="22" width="74">
     <nav class="menu">
       <ol>
-        <li>
+        <li class="creativity">
           <a href="#">Creatividad y diseño
             <svg viewBox="10 50 80 80" width="2" height="2">
               <path d="M 100 100 L 300 100 L 200 300 z" />
             </svg>
           </a>
         </li>
-        <li>
+        <li class="marketing">
           <a href="#">Marketing y análisis
             <svg viewBox="10 50 80 40" width="2.1" height="2">
               <path d="M 100 100 L 300 100 L 200 300 z" />
@@ -351,5 +351,43 @@
       </div>
     </div>
   </footer>
+  <script>
+    const ipad = window.matchMedia('screen and (max-width: 767px)');
+    const menu = document.querySelector('.menu');
+    const listPDF = document.querySelector('.list-PDF');
+    const listSolutions = document.querySelector('.list-solutions');
+    const tecAssist = document.querySelector('.tec-assist');
+    const listMore = document.querySelector('.list-more');
+    const header = document.querySelector('.header');
+    const burgerButton = document.querySelector('#burger-menu');
+    ipad.addListener(validation);
+
+    function validation(event) {
+      if (event.matches) {
+        burgerButton.addEventListener('click', hideShow);
+      } else {
+        burgerButton.removeEventListener('click', hideShow);
+      }
+    }
+    validation(ipad);
+
+    function hideShow() {
+      if (menu.classList.contains('is-active')) {
+        menu.classList.remove('is-active');
+        listPDF.classList.remove('is-active');
+        listSolutions.classList.remove('is-active');
+        tecAssist.classList.remove('is-active');
+        listMore.classList.remove('is-active');
+        header.classList.remove('is-active');
+      } else {
+        menu.classList.add('is-active');
+        listPDF.classList.add('is-active');
+        listSolutions.classList.add('is-active');
+        tecAssist.classList.add('is-active');
+        listMore.classList.add('is-active');
+        header.classList.add('is-active');
+      }
+    }
+  </script>
 </body>
 </html>
